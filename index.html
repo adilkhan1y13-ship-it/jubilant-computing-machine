@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Last Zone — Battle Royale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game-wrap">
+    <canvas id="game" aria-label="Last Zone battle royale game"></canvas>
+    <section class="hud">
+      <div class="topline">
+        <div class="pill">LAST ZONE <span class="sub">BATTLE ROYALE</span></div>
+        <div class="pill" id="alive">ENEMIES: 8</div>
+        <div class="pill" id="zone">ZONE: SAFE</div>
+      </div>
+      <div class="status">
+        <div class="stat"><span>HP</span><div class="bar"><i id="hpbar"></i></div><b id="hptext">100</b></div>
+        <div class="stat"><span>AMMO</span><b id="ammo">∞</b></div>
+        <div class="stat"><span>KILLS</span><b id="kills">0</b></div>
+      </div>
+      <div class="crosshair" id="crosshair">+</div>
+      <div class="message" id="message">Move • Aim • Survive</div>
+      <div class="bottom">
+        <div class="help">WASD / Arrow keys: Move · Mouse: Aim · Click / Space: Fire<br>Auto-headshot assist is ON when an enemy is near your crosshair.</div>
+        <button id="restart">RESTART</button>
+      </div>
+      <div class="mobile-controls">
+        <div class="pad" id="pad"><span>MOVE</span><i></i></div>
+        <button id="fire">FIRE</button>
+      </div>
+      <div class="start-card" id="start-card">
+        <div class="eyebrow">ORIGINAL MINI GAME</div>
+        <h1>LAST <em>ZONE</em></h1>
+        <p>Drop into the arena. Defeat enemy bots, use auto-headshot assist, and stay inside the shrinking safe zone.</p>
+        <button id="start">START MATCH</button>
+        <small>Inspired by the battle-royale genre; original prototype and visuals.</small>
+      </div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
